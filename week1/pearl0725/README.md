@@ -4,6 +4,8 @@
     - IaC 개념과 등장 배경
     - Terraform 구성 요소와 동작 원리
 
+<br>
+
 ## IaC 개념과 등장 배경
 
 
@@ -21,9 +23,13 @@ CloudFormation과 같은 클라우드 환경에서 제공하는 YAML 또는 JSON
 
 특히나 클라우드 환경은 기존 온프레미스 환경에서 제공하는 다양한 구성 요소를 S/W 방식으로 추상화 한 형태로 제공하는데, 이러한 구성 요소들을 모듈화하여 패키징 해두면 반복적인 구축 절차를 최소화하고 재사용성에 용이하다. 
 
+<br>
+
 ## Terraform 구성 요소와 동작 원리
 
 <img width="561" height="276" alt="Image" src="https://github.com/user-attachments/assets/5bc7d2b4-5945-4376-b0dc-d57384db9f00" />
+
+<br>
 
 **Main Commands**
 
@@ -35,6 +41,8 @@ $ terraform plan # 수행 작업 테스트 실행
 $ terraform apply # 실행(빌드)
 $ terraform destory # 삭제
 ```
+
+<br>
 
 **Resource**
 
@@ -48,9 +56,13 @@ resource "<PROVIDER>_<TYPE>" "<NAME>" {
 }
 ```
 
+<br>
+
 **Provider**
 
 테라폼은 인프라 구성을 위해 하나 이상의 프로바이더를 지정해야 한다. 이를 통해 테라폼이 각 프로바이더에서 제공하는 API를 호출하여 상호작용을 할 수 있다.
+
+<br>
 
 **State**
 
